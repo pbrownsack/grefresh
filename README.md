@@ -20,15 +20,21 @@ https://git-scm.com/downloads
 npm install
 ```
 2. Open src/config.js and add your details in there. The comments should explain everything
-3. If you want an automatic service in *nix, open 'grefresh.service' and replace variables indicated by { } with your information.
-4. Place grefresh.service into /lib/systemd/system then run the following commands
+3. To run GRefresh manually, use
+```
+npm start
+```
+
+## Unix Service
+1. If you want an automatic service in *nix, open 'grefresh.service' and replace variables indicated by { } with your information.
+2. Place grefresh.service into /lib/systemd/system then run the following commands
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable grefresh
 sudo systemctl start grefresh
 ```
 
-5. If you want to check the status of GRefresh, you may run
+3. If you want to check the status of GRefresh, you may run
 ```bash
 sudo systemctl status grefresh
 ```
