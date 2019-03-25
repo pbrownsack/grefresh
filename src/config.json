@@ -1,0 +1,6 @@
+{
+    "secret": "eatme",
+    "path": "bah",
+    "branch": "master",
+    "port": 8080
+}
