@@ -15,7 +15,7 @@ https://git-scm.com/downloads
 5. Be sure to allow the port you specified through your firewall.
 
 ## Configuration
-1. Download and place this in a folder that your desired user can run. Open a command line there and run
+1. Download and place this in a folder that your desired user has permissions on. Open a command line there and run
 ```
 npm install
 ```
