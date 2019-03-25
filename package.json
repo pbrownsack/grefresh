@@ -2,6 +2,7 @@
   "name": "grefresh",
   "version": "0.0.0",
   "private": true,
+  "bin": "src/grefresh.js",
   "scripts": {
     "start": "node src/grefresh.js"
   },
