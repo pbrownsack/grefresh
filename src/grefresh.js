@@ -2,6 +2,7 @@
 *   GRefresh v1.0
 *   pbrownsack
 *   You should be using a secret with your webhooks.
+*   Make sure you are running this with the correct user.
 */
 
 var express = require('express');
