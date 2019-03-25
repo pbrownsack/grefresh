@@ -7,13 +7,19 @@
 
 var express = require('express');
 var crypto = require('crypto');
+var path = require('path');
 var exec = require('child_process').exec;
+var fs = require('fs');
 var app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-var config = require('./config.js');
+var config = {};
+fs.readFile(path.join(__dirname, '/config.json'), 'utf8', (err, data) => {
+    if (err) throw err;
+    config = JSON.parse(data);
+})
 
 app.post("/", (req, res) => {
     if (!config.secret || !config.path) {
