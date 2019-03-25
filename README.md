@@ -20,7 +20,7 @@ https://git-scm.com/downloads
 npm install
 ```
 2. Open src/config.js and add your details in there. The comments should explain everything
-3. To run GRefresh manually, use
+3. To run GRefresh manually, cd to the GRefresh root folder and use
 ```
 npm start
 ```
