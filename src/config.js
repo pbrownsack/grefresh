@@ -1,11 +1,11 @@
 module.exports = {
-    // WebHook secret from GitHub
+    // Webhook secret from GitHub Webhooks page
     secret: 'your_webhook_secret',
 
     // Unix filepath to Git repository
     path: '/your/file/path',
 
-    // Branch you want to keep in sync with
+    // Git branch you want to keep in sync with
     branch: 'master',
 
     // Port to run this application on
