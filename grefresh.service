@@ -1,0 +1,13 @@
+[Unit]
+Description=grefresh.js
+Documentation=https://github.com/pbrownsack/grefresh
+After=network.target
+
+[Service]
+Type=simple
+User={YOUR_UNIX_USERNAME}
+ExecStart=/usr/bin/node {PATH_TO_GREFRESH}/src/grefresh.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
